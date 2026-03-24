@@ -1,0 +1,44 @@
+@model Rsm.MiniSalesOrder.Web.Models.InvoiceViewModel
+
+@{
+    ViewData["Title"] = "Generar Factura";
+}
+
+<div class="mb-4">
+    <h1 class="mb-1">Generar Factura</h1>
+    <p class="text-muted mb-0">Confirma la generación de la factura para esta orden.</p>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <form asp-action="CreateInvoice" method="post">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <input type="hidden" asp-for="SalesOrderId" />
+            <input type="hidden" asp-for="Amount" />
+
+            <div class="mb-3">
+                <label asp-for="Amount" class="form-label"></label>
+                <input asp-for="Amount" class="form-control" readonly />
+            </div>
+
+            <div class="alert alert-info mb-3">
+                Al generar la factura, la orden pasará al estado <strong>Facturada</strong>.
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+                <button type="submit" class="btn btn-primary">Generar Factura</button>
+                <a asp-action="Details" asp-route-id="@Model.SalesOrderId" class="btn btn-outline-secondary">Volver a la
+                    Orden</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }

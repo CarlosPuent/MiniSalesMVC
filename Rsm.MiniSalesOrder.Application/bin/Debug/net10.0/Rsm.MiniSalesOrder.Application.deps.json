@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Rsm.MiniSalesOrder.Application/1.0.0": {
+        "dependencies": {
+          "Rsm.MiniSalesOrder.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Rsm.MiniSalesOrder.Application.dll": {}
+        }
+      },
+      "Rsm.MiniSalesOrder.Domain/1.0.0": {
+        "runtime": {
+          "Rsm.MiniSalesOrder.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Rsm.MiniSalesOrder.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rsm.MiniSalesOrder.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

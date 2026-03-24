@@ -1,0 +1,11 @@
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\bin\Debug\net10.0\Rsm.MiniSalesOrder.Domain.deps.json
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\bin\Debug\net10.0\Rsm.MiniSalesOrder.Domain.dll
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\bin\Debug\net10.0\Rsm.MiniSalesOrder.Domain.pdb
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\obj\Debug\net10.0\Rsm.MiniSalesOrder.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\obj\Debug\net10.0\Rsm.MiniSalesOrder.Domain.AssemblyInfoInputs.cache
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\obj\Debug\net10.0\Rsm.MiniSalesOrder.Domain.AssemblyInfo.cs
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\obj\Debug\net10.0\Rsm.MiniSalesOrder.Domain.csproj.CoreCompileInputs.cache
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\obj\Debug\net10.0\Rsm.MiniSalesOrder.Domain.dll
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\obj\Debug\net10.0\refint\Rsm.MiniSalesOrder.Domain.dll
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\obj\Debug\net10.0\Rsm.MiniSalesOrder.Domain.pdb
+C:\RSM\GITHUBCOPILOT\RsmMiniSalesOrder\Rsm.MiniSalesOrder.Domain\obj\Debug\net10.0\ref\Rsm.MiniSalesOrder.Domain.dll

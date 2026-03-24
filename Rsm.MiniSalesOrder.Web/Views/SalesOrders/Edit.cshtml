@@ -1,0 +1,52 @@
+@model Rsm.MiniSalesOrder.Web.Models.SalesOrderViewModel
+
+@{
+    ViewData["Title"] = "Editar Orden";
+}
+
+<div class="mb-4">
+    <h1 class="mb-1">Editar Orden de Venta</h1>
+    <p class="text-muted mb-0">Actualiza las notas de la orden seleccionada.</p>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <form asp-action="Edit" method="post">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label asp-for="OrderNumber" class="form-label"></label>
+                    <input asp-for="OrderNumber" class="form-control" readonly />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="CustomerId" class="form-label"></label>
+                    <select asp-for="CustomerId" class="form-select" asp-items="ViewBag.Customers" disabled></select>
+                    <div class="form-text">El cliente no puede modificarse una vez creada la orden.</div>
+                </div>
+
+                <div class="col-12">
+                    <label asp-for="Notes" class="form-label"></label>
+                    <textarea asp-for="Notes" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="Notes" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="mt-4 d-flex gap-2 flex-wrap">
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-outline-info">Ver Detalles</a>
+                <a asp-action="Index" class="btn btn-outline-secondary">Volver a la Lista</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

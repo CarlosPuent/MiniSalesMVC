@@ -1,0 +1,48 @@
+@model Rsm.MiniSalesOrder.Web.Models.SalesOrderItemViewModel
+
+@{
+    ViewData["Title"] = "Agregar Artículo";
+}
+
+<div class="mb-4">
+    <h1 class="mb-1">Agregar Artículo a la Orden</h1>
+    <p class="text-muted mb-0">Selecciona un producto y define la cantidad a registrar.</p>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <form asp-action="AddItem" method="post">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <input type="hidden" asp-for="SalesOrderId" />
+
+            <div class="mb-3">
+                <label asp-for="ProductId" class="form-label"></label>
+                <select asp-for="ProductId" class="form-select" asp-items="ViewBag.Products">
+                    <option value="">-- Seleccione un Producto --</option>
+                </select>
+                <span asp-validation-for="ProductId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Quantity" class="form-label"></label>
+                <input asp-for="Quantity" class="form-control" type="number" min="1" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+                <button type="submit" class="btn btn-primary">Agregar Artículo</button>
+                <a asp-action="Details" asp-route-id="@Model.SalesOrderId" class="btn btn-outline-secondary">Volver a la
+                    Orden</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
