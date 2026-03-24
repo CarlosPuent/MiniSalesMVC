@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Rsm.MiniSalesOrder.Application/Rsm.MiniSalesOrder.Application.csproj" />
+  <Project Path="Rsm.MiniSalesOrder.Domain/Rsm.MiniSalesOrder.Domain.csproj" />
+  <Project Path="Rsm.MiniSalesOrder.Infrastructure/Rsm.MiniSalesOrder.Infrastructure.csproj" />
+  <Project Path="Rsm.MiniSalesOrder.Web/Rsm.MiniSalesOrder.Web.csproj" />
+</Solution>
